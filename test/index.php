@@ -1,5 +1,9 @@
 <html>
-<head><title>test page</title></head>
+<head>
+  <title>test page</title>
+  <link rel="stylesheet" type="text/css" href="css/external.css" />
+  <script type="text/javascript" src="js/external.js"></script>
+</head>
 <body>
   <h1>Test</h1>
   <img src="images/htm_baby.jpg" />
