@@ -2,6 +2,7 @@
   "name": "web-desktop",
   "version": "0.0.1",
   "main": "index.html",
+  "node-main": "main.js",
   "window":{
     "title":"Web Desktop",
     "width":1200,
