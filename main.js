@@ -19,9 +19,11 @@ exports.init = function(g){
 
   var config = fs.readFile("applications.json", 'utf8',function(err,data){
     if(err){
-      console.log(e);
+      console.log(e.message);
+      window.alert(e.message);
     }else if(data == ''){
       console.log("applications.json is empty");
+      wubdiw,alert("Applications configuration is empty");
       return;
     }
     var appDir = process.cwd() + '/' + appName;
@@ -72,6 +74,7 @@ exports.init = function(g){
       },1000);
     }else{
       console.log("No such application");
+      window.alert("Cannot find application " + appName);
     }    
   });
 }
