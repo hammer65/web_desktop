@@ -11,8 +11,8 @@ var args = NWAPP.argv;
 if(args[0] && args[0] != ''){
   appName = args[0];
 }
-var appDir = "./" + appName;
-process.cwd(appDir);
+var appDir = process.cwd() + '/' + appName;
+console.log(process.cwd());
 console.log("launching " + appName);
 server.setApplication({DIR: "./" + appName});
 
